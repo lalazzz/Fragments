@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fragments</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_homepage">HomePage</string>
+    <string name="action_facebook">Facebook</string>
+    <string name="action_announcement">Announcement</string>
+</resources>
