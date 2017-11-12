@@ -43,13 +43,18 @@ public class MainActivity extends AppCompatActivity {
             //return true;
         }
         else if (id == R.id.action_facebook) {
-            return true;
+            frag = new FbPageFrag();
+            //return true;
         }
         else if (id == R.id.action_announcement) {
-            return true;
+            frag = new AnnoPageFrag();
+            //return true;
         }
+        //This is to add the fragment
+        //getFragmentManager().beginTransaction().add(R.id.MyContainer, frag).commit();
 
-        getFragmentManager().beginTransaction().add(R.id.MyContainer, frag).commit();
+        //This is to replace the fragment
+        getFragmentManager().beginTransaction().replace(R.id.MyContainer, frag).commit();
 
         return super.onOptionsItemSelected(item);
     }
